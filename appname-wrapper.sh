@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /home/pi/Downloads/Appfolder/
+cd /home/user/Downloads/Appfolder/
 exec ./appname
