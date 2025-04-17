@@ -1,0 +1,11 @@
+[Unit]
+Description=Appname Service
+After=network.target
+
+[Service]
+WorkingDirectory=/home/user/Downloads/Appfolder
+Environment=PATH=/home/pi/.nvm/versions/node/v23.10.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games:/usr/local/go/bin
+ExecStart=/home/user/Downloads/Appfolder/appname-wrapper.sh
+
+[Install]
+WantedBy=multi-user.target
